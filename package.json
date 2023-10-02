@@ -1,0 +1,6 @@
+{
+  "devDependencies": {
+    "date-it": "^1.0.0",
+    "string-it-on": "^1.1.1"
+  }
+}
