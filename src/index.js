@@ -1,3 +1,6 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var console_1 = require("console");
 var DateIt = require('date-it');
 var stringIt = require('string-it-on');
 var data = require('./data.json');
@@ -22,12 +25,17 @@ function challengeThree() {
 }
 function challengeFour() {
     data.forEach(function (element) {
-        var phone = element.phone.toString();
-        var phoneArray = phone.split('');
-        var areaCode = phoneArray.slice(0, 3).join('');
-        var firstThree = phoneArray.slice(3, 6).join('');
-        var lastFour = phoneArray.slice(6, 10).join('');
-        console.log("(".concat(areaCode, ") ").concat(firstThree, "-").concat(lastFour));
+        var phone = element.phone;
+        if (element.phone === null || element.phone.length !== 10) {
+            (0, console_1.error)('Invalid phone number');
+        }
+        else {
+            var phoneArray = phone.split('');
+            var areaCode = phoneArray.slice(0, 3).join('');
+            var firstThree = phoneArray.slice(3, 6).join('');
+            var lastFour = phoneArray.slice(6, 10).join('');
+            console.log("(".concat(areaCode, ") ").concat(firstThree, "-").concat(lastFour));
+        }
     });
 }
 module.exports = {
