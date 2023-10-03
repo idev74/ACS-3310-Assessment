@@ -1,7 +1,2 @@
-const { 
-    challengeOne, 
-    challengeTwo, 
-    challengeThree, 
-    challengeFour 
-    }  = require('../src/index.js')
-
+const { challengeFour } = require('../src/index.js')
+const data = require('../src/data.json')
