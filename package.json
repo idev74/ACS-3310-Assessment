@@ -1,6 +1,17 @@
 {
+  "name": "acs-3310-assessment",
+  "description": "Test your skills gained this term by solving this problem.",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Isabella Devassy",
+  "license": "ISC",
   "devDependencies": {
+    "@types/node": "^20.8.0",
     "date-it": "^1.0.0",
+    "jest": "^29.7.0",
     "string-it-on": "^1.1.1"
   }
 }
